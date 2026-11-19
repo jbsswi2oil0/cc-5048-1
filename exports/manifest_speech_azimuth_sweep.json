@@ -1,0 +1,477 @@
+{
+  "session": "speech_azimuth_sweep",
+  "signal": "speech",
+  "sample_rate": 48000,
+  "block_size_samples": 512,
+  "algorithm_latency_samples": 512,
+  "algorithm_latency_seconds": 0.010666666666666666,
+  "crossfade_seconds": 0.021333333333333333,
+  "blocks_processed": 188,
+  "hrtf_database": {
+    "source": "procedural-generic-v1",
+    "sample_rate": 48000,
+    "hrir_length_samples": 128,
+    "azimuths_deg": [
+      -180.0,
+      -175.0,
+      -170.0,
+      -165.0,
+      -160.0,
+      -155.0,
+      -150.0,
+      -145.0,
+      -140.0,
+      -135.0,
+      -130.0,
+      -125.0,
+      -120.0,
+      -115.0,
+      -110.0,
+      -105.0,
+      -100.0,
+      -95.0,
+      -90.0,
+      -85.0,
+      -80.0,
+      -75.0,
+      -70.0,
+      -65.0,
+      -60.0,
+      -55.0,
+      -50.0,
+      -45.0,
+      -40.0,
+      -35.0,
+      -30.0,
+      -25.0,
+      -20.0,
+      -15.0,
+      -10.0,
+      -5.0,
+      0.0,
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0,
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0,
+      55.0,
+      60.0,
+      65.0,
+      70.0,
+      75.0,
+      80.0,
+      85.0,
+      90.0,
+      95.0,
+      100.0,
+      105.0,
+      110.0,
+      115.0,
+      120.0,
+      125.0,
+      130.0,
+      135.0,
+      140.0,
+      145.0,
+      150.0,
+      155.0,
+      160.0,
+      165.0,
+      170.0,
+      175.0
+    ],
+    "elevations_deg": [
+      -90.0,
+      -80.0,
+      -70.0,
+      -60.0,
+      -50.0,
+      -40.0,
+      -30.0,
+      -20.0,
+      -10.0,
+      0.0,
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0
+    ],
+    "metadata": {
+      "model": "signed sinusoidal ITD + head shadow + pinna notch + front/back shelf + torso",
+      "head_radius_m": 0.0875,
+      "speed_of_sound_mps": 343.0,
+      "azimuth_step_deg": 5.0,
+      "elevation_step_deg": 10.0,
+      "note": "generic mannequin, not an individual measurement"
+    }
+  },
+  "hrirs_used": [
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-173.9_el+0.0.wav",
+      "azimuth_deg": -173.898,
+      "elevation_deg": 0.0,
+      "sha256": "001edc7a5980d5f2db302e25b77e2f35037a5665831957b3a9a2782c6d143120"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-167.8_el+0.0.wav",
+      "azimuth_deg": -167.797,
+      "elevation_deg": 0.0,
+      "sha256": "511d68cbfaaec7e3c568e676b5dcb3e9f9b99dc8df9c5121c3d85ca5f3e15587"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-161.7_el+0.0.wav",
+      "azimuth_deg": -161.695,
+      "elevation_deg": 0.0,
+      "sha256": "16ed5cacdb0dde1f8be86b93a851e319cc7599172579f6db89b9b02c5fe18e86"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-155.6_el+0.0.wav",
+      "azimuth_deg": -155.593,
+      "elevation_deg": 0.0,
+      "sha256": "1954a334d1b943cea2c90b305dc05b1166ccd8854a43c5a178493bdf2bcb9fd5"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-149.5_el+0.0.wav",
+      "azimuth_deg": -149.492,
+      "elevation_deg": 0.0,
+      "sha256": "1507808bf7b621ba46292ad537d9a08c9a5fd2a5cecc9547c1f100a6ab97c08c"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-143.4_el+0.0.wav",
+      "azimuth_deg": -143.39,
+      "elevation_deg": 0.0,
+      "sha256": "6c6a3c3b30e83b8907977cf83eef71652b1f7d8484a9a162a3ede9939b4aa960"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-137.3_el+0.0.wav",
+      "azimuth_deg": -137.288,
+      "elevation_deg": 0.0,
+      "sha256": "a249da28f0f917879ef0862bcae36ba85582492ec9e79967e210dccc70533087"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-131.2_el+0.0.wav",
+      "azimuth_deg": -131.186,
+      "elevation_deg": 0.0,
+      "sha256": "aae2f8513ea55977b6715b8103955775ec8d9d04aa5770e84c6c1d2e848ac743"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-125.1_el+0.0.wav",
+      "azimuth_deg": -125.085,
+      "elevation_deg": 0.0,
+      "sha256": "8aec51bf44cae134cf68d0407ee7ebaef10b2ca55179a4a8129d3efc082309d0"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-119.0_el+0.0.wav",
+      "azimuth_deg": -118.983,
+      "elevation_deg": 0.0,
+      "sha256": "ab13601738f82fbb2ae6e19475b1184fba9e36258c2210a477eda0f219e8c675"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-112.9_el+0.0.wav",
+      "azimuth_deg": -112.881,
+      "elevation_deg": 0.0,
+      "sha256": "81da1e4bea72728f2618af2bb6fd5d42368e88b5cb50789807bbd2c60b905adb"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-106.8_el+0.0.wav",
+      "azimuth_deg": -106.78,
+      "elevation_deg": 0.0,
+      "sha256": "6d60adf09cfa1b7a64616a880dcc931c16170f5bf0853936ec6ab2c67a1d8a55"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-100.7_el+0.0.wav",
+      "azimuth_deg": -100.678,
+      "elevation_deg": 0.0,
+      "sha256": "43edc551798b77cc13c548bb8f001c62cc210e64a59cfaa6dbe8be21bf103268"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-94.6_el+0.0.wav",
+      "azimuth_deg": -94.576,
+      "elevation_deg": 0.0,
+      "sha256": "99076a8787dacfb5d8e34478a9d35a859fd39565d1c798d37ce7dc9c516a641e"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-88.5_el+0.0.wav",
+      "azimuth_deg": -88.475,
+      "elevation_deg": 0.0,
+      "sha256": "3a461b2faf3c675384ef42be9f325b29082fb5a56cb83d98381f1322287fc0f6"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-82.4_el+0.0.wav",
+      "azimuth_deg": -82.373,
+      "elevation_deg": 0.0,
+      "sha256": "c7e17efa6b836f4a2b86ed2631b83474c5d682885ee7787b541026cbbfaecdce"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-76.3_el+0.0.wav",
+      "azimuth_deg": -76.271,
+      "elevation_deg": 0.0,
+      "sha256": "a484211254666541cc2693a330cab85e69d345b0f35847015a32006a88d60211"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-70.2_el+0.0.wav",
+      "azimuth_deg": -70.169,
+      "elevation_deg": 0.0,
+      "sha256": "1929210e55766e5c1ccd6b0c9e2c1cf9a9ccfdcc15eecaec100cb4c8c673b979"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-64.1_el+0.0.wav",
+      "azimuth_deg": -64.068,
+      "elevation_deg": 0.0,
+      "sha256": "83de8133b4ff6ea62cfb2941b397ac3fe291c438f560a619800d518a67059e00"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-58.0_el+0.0.wav",
+      "azimuth_deg": -57.966,
+      "elevation_deg": 0.0,
+      "sha256": "cbcd14d62370693fa2402f7d16683f7d16d19bc007e55ec12130a1f64c0c7db7"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-51.9_el+0.0.wav",
+      "azimuth_deg": -51.864,
+      "elevation_deg": 0.0,
+      "sha256": "b1239345dd7785e4c2c6b8facc00ea17b06993256211a29ff98fb2233427e39b"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-45.8_el+0.0.wav",
+      "azimuth_deg": -45.763,
+      "elevation_deg": 0.0,
+      "sha256": "a986cd3ab0e2f78bd254512865a5e1112a69c6e3d071887bcca1231e5caca07e"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-39.7_el+0.0.wav",
+      "azimuth_deg": -39.661,
+      "elevation_deg": 0.0,
+      "sha256": "fe8e011e6ca03c2c684bd94cd06e4c0e41da90f2f49699507954ac700bee4075"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-33.6_el+0.0.wav",
+      "azimuth_deg": -33.559,
+      "elevation_deg": 0.0,
+      "sha256": "4dc3baf232e860e0864bf7f14c12efd0e300f1f5067de3fc4b263709cb648db8"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-27.5_el+0.0.wav",
+      "azimuth_deg": -27.458,
+      "elevation_deg": 0.0,
+      "sha256": "90aec31a209466e516d5dc604b74ac36c964d1703370e2682dd97fb428d86bfd"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-21.4_el+0.0.wav",
+      "azimuth_deg": -21.356,
+      "elevation_deg": 0.0,
+      "sha256": "3b61c323d9ccbf01923b1780b700dc88016e05d003b30a3cb72864d23194b84e"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-15.3_el+0.0.wav",
+      "azimuth_deg": -15.254,
+      "elevation_deg": 0.0,
+      "sha256": "6c91acc2a4dd6851ca25da3a6eec7344d87524d4ab18ef9e2dc62e9760fdacdb"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-9.2_el+0.0.wav",
+      "azimuth_deg": -9.153,
+      "elevation_deg": 0.0,
+      "sha256": "aa3afb16b8fff804d33c346504fe3282e8d486fc59143d73fd74d2720432cb79"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az-3.1_el+0.0.wav",
+      "azimuth_deg": -3.051,
+      "elevation_deg": 0.0,
+      "sha256": "dc7e7cd1b7696b9afaf9997417fceec57710d62758a5911f99c0148535ba44fa"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+3.1_el+0.0.wav",
+      "azimuth_deg": 3.051,
+      "elevation_deg": 0.0,
+      "sha256": "c4b5a71a38edfe9eafbf10096212fefb2a752ece6805bd1affbea60de9eae9bb"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+9.2_el+0.0.wav",
+      "azimuth_deg": 9.153,
+      "elevation_deg": 0.0,
+      "sha256": "f21cbc37172f0bda75e25d9634b3d832676a3e6e4012b4b1cc8c5ed98c23337f"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+15.3_el+0.0.wav",
+      "azimuth_deg": 15.254,
+      "elevation_deg": 0.0,
+      "sha256": "4b1faf9c6868cc733eb1b23c7f2954ef0f1f638554145837e574b1fd1ce6a505"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+21.4_el+0.0.wav",
+      "azimuth_deg": 21.356,
+      "elevation_deg": 0.0,
+      "sha256": "c68b43331d564132b82e673911ace16b36a75bd20a947369f56f27ac8334ed12"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+27.5_el+0.0.wav",
+      "azimuth_deg": 27.458,
+      "elevation_deg": 0.0,
+      "sha256": "46a4172f51aafc14d5c9b5cb1cbc35912391c5a5b579bedfe47fc3dcd37f98cc"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+33.6_el+0.0.wav",
+      "azimuth_deg": 33.559,
+      "elevation_deg": 0.0,
+      "sha256": "66de8ccd40a771459354f92d45ae26844e5c05b0b85c259f2225e9b39762cf3b"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+39.7_el+0.0.wav",
+      "azimuth_deg": 39.661,
+      "elevation_deg": 0.0,
+      "sha256": "2953da71b227e3e47f1f36576e51a43481ed5b079d498f68baeea0c82f872730"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+45.8_el+0.0.wav",
+      "azimuth_deg": 45.763,
+      "elevation_deg": 0.0,
+      "sha256": "aeabe0a89e7579b0d32045c586774ae72e2352396fb9ab43411e7d4a6b0d981f"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+51.9_el+0.0.wav",
+      "azimuth_deg": 51.864,
+      "elevation_deg": 0.0,
+      "sha256": "c982949e3a45f061f4a3a5a8bafad00f4224abd11530c384e1ac54ed3e502543"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+58.0_el+0.0.wav",
+      "azimuth_deg": 57.966,
+      "elevation_deg": 0.0,
+      "sha256": "e0870d493f5fb02780babbeef9b34edff85ccf2cb9aff0cfad7cbb52df28dcd1"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+64.1_el+0.0.wav",
+      "azimuth_deg": 64.068,
+      "elevation_deg": 0.0,
+      "sha256": "1213a9a86e5d7df4fbacbe2ac52c19468725b1ebcaab27ae979eab2cf0f0f290"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+70.2_el+0.0.wav",
+      "azimuth_deg": 70.169,
+      "elevation_deg": 0.0,
+      "sha256": "41bc0451fea7dac65dd3b3c7478d5dc830aaa8e9b3478db970eca929ffa98be2"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+76.3_el+0.0.wav",
+      "azimuth_deg": 76.271,
+      "elevation_deg": 0.0,
+      "sha256": "256b48c6ff7e5060620ac4884f14706d145ba86c3e3e79bbb0b07162046cfcf4"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+82.4_el+0.0.wav",
+      "azimuth_deg": 82.373,
+      "elevation_deg": 0.0,
+      "sha256": "f19a208d73f1cca8357aa99da7356307f1c6563e35b70d249d4bc3ab9f7bac6c"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+88.5_el+0.0.wav",
+      "azimuth_deg": 88.475,
+      "elevation_deg": 0.0,
+      "sha256": "ae82e1c90cecbf80f084f9866424c98e70abe00f52dfddb0e20dd072542bc0eb"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+94.6_el+0.0.wav",
+      "azimuth_deg": 94.576,
+      "elevation_deg": 0.0,
+      "sha256": "a5998c5efe53b8a40f15acf099c87dc66b065b1d6d846f818455475e87adf084"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+100.7_el+0.0.wav",
+      "azimuth_deg": 100.678,
+      "elevation_deg": 0.0,
+      "sha256": "86b4093269558280f553435282246fe843f026a3e34c0bfdd07c8838563a4c93"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+106.8_el+0.0.wav",
+      "azimuth_deg": 106.78,
+      "elevation_deg": 0.0,
+      "sha256": "3f3953cb26e48ad5c31d14bebcdf35c7a623eb35c400bb1a26a37240e8cf2d50"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+112.9_el+0.0.wav",
+      "azimuth_deg": 112.881,
+      "elevation_deg": 0.0,
+      "sha256": "e27aec932584e43a81a53b3dd50d40957c3d7c7b2d3b143204a3c4dfb90310b6"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+119.0_el+0.0.wav",
+      "azimuth_deg": 118.983,
+      "elevation_deg": 0.0,
+      "sha256": "5aa0fae7f3659cb280d616990fab3d3a850347641a2da7abc8d1a2b5f8864cae"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+125.1_el+0.0.wav",
+      "azimuth_deg": 125.085,
+      "elevation_deg": 0.0,
+      "sha256": "df5582afe17dd541d262829325b3da1285731d9986a37e7164fc1ed6bbfcaf37"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+131.2_el+0.0.wav",
+      "azimuth_deg": 131.186,
+      "elevation_deg": 0.0,
+      "sha256": "13e3cae2088d9c24db6580a8ebde91efa7785781d7df080c35d0f227f68716f4"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+137.3_el+0.0.wav",
+      "azimuth_deg": 137.288,
+      "elevation_deg": 0.0,
+      "sha256": "666b543d317924a3728fa33d7db4914d88c6e132e59388d7c1a2764632f8eaae"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+143.4_el+0.0.wav",
+      "azimuth_deg": 143.39,
+      "elevation_deg": 0.0,
+      "sha256": "607cd692a1ba7ad51dc9daa9966f7fecb025ca09f2c2845d95cd0363da591a71"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+149.5_el+0.0.wav",
+      "azimuth_deg": 149.492,
+      "elevation_deg": 0.0,
+      "sha256": "e63c7681594cc8e6a9cfc60c052a921762d27ae9620abae8a19da8c3356b4184"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+155.6_el+0.0.wav",
+      "azimuth_deg": 155.593,
+      "elevation_deg": 0.0,
+      "sha256": "5d891e8acfd4f3b9b2f4dde45bdf12fd1d10748bf74ed9d91d4521303ffe6ff4"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+161.7_el+0.0.wav",
+      "azimuth_deg": 161.695,
+      "elevation_deg": 0.0,
+      "sha256": "924c92594142f2a2527af56f46db0a23402bbdb615cc307957744933ed20e50a"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+167.8_el+0.0.wav",
+      "azimuth_deg": 167.797,
+      "elevation_deg": 0.0,
+      "sha256": "a9e83c25d79c1d4919d43f4d70fc863079b503e2538de90db5bef319f1377f7b"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+173.9_el+0.0.wav",
+      "azimuth_deg": 173.898,
+      "elevation_deg": 0.0,
+      "sha256": "7f8f2b46cfe687381e3a9b47a14cb6ea80c2efc1d46da6e782cb2660eda85c3f"
+    },
+    {
+      "file": "hrirs/speech_azimuth_sweep_az+180.0_el+0.0.wav",
+      "azimuth_deg": 180.0,
+      "elevation_deg": 0.0,
+      "sha256": "9f41ef7ae87ba93408b7aa749476d3dd6b9b9c8c3d3cef65b5b644f4d540d46d"
+    }
+  ],
+  "output_file": "binaural_speech_azimuth_sweep.wav",
+  "output_sha256": "9e1a761e978982a2006c01203a330af44498d65fc906d05f333a33075cd54bf4",
+  "output_peak_linear": 0.6911292662280148
+}

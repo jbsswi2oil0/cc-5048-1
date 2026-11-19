@@ -1,0 +1,477 @@
+{
+  "session": "impulse_azimuth_sweep",
+  "signal": "impulse",
+  "sample_rate": 48000,
+  "block_size_samples": 512,
+  "algorithm_latency_samples": 512,
+  "algorithm_latency_seconds": 0.010666666666666666,
+  "crossfade_seconds": 0.021333333333333333,
+  "blocks_processed": 94,
+  "hrtf_database": {
+    "source": "procedural-generic-v1",
+    "sample_rate": 48000,
+    "hrir_length_samples": 128,
+    "azimuths_deg": [
+      -180.0,
+      -175.0,
+      -170.0,
+      -165.0,
+      -160.0,
+      -155.0,
+      -150.0,
+      -145.0,
+      -140.0,
+      -135.0,
+      -130.0,
+      -125.0,
+      -120.0,
+      -115.0,
+      -110.0,
+      -105.0,
+      -100.0,
+      -95.0,
+      -90.0,
+      -85.0,
+      -80.0,
+      -75.0,
+      -70.0,
+      -65.0,
+      -60.0,
+      -55.0,
+      -50.0,
+      -45.0,
+      -40.0,
+      -35.0,
+      -30.0,
+      -25.0,
+      -20.0,
+      -15.0,
+      -10.0,
+      -5.0,
+      0.0,
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0,
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0,
+      55.0,
+      60.0,
+      65.0,
+      70.0,
+      75.0,
+      80.0,
+      85.0,
+      90.0,
+      95.0,
+      100.0,
+      105.0,
+      110.0,
+      115.0,
+      120.0,
+      125.0,
+      130.0,
+      135.0,
+      140.0,
+      145.0,
+      150.0,
+      155.0,
+      160.0,
+      165.0,
+      170.0,
+      175.0
+    ],
+    "elevations_deg": [
+      -90.0,
+      -80.0,
+      -70.0,
+      -60.0,
+      -50.0,
+      -40.0,
+      -30.0,
+      -20.0,
+      -10.0,
+      0.0,
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0
+    ],
+    "metadata": {
+      "model": "signed sinusoidal ITD + head shadow + pinna notch + front/back shelf + torso",
+      "head_radius_m": 0.0875,
+      "speed_of_sound_mps": 343.0,
+      "azimuth_step_deg": 5.0,
+      "elevation_step_deg": 10.0,
+      "note": "generic mannequin, not an individual measurement"
+    }
+  },
+  "hrirs_used": [
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-173.9_el+0.0.wav",
+      "azimuth_deg": -173.898,
+      "elevation_deg": 0.0,
+      "sha256": "118c5e2f5069e52bcbb6155367ca551fa821250e669aa448bc92c68f13caae5c"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-167.8_el+0.0.wav",
+      "azimuth_deg": -167.797,
+      "elevation_deg": 0.0,
+      "sha256": "45cab65a470823d9f955143e264cfcf0638c11ecec5f4d88b745d4b9f0383870"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-161.7_el+0.0.wav",
+      "azimuth_deg": -161.695,
+      "elevation_deg": 0.0,
+      "sha256": "9a64c139410ebefee0219a6a4bfc4aba65209d590cb9b71798d1bd5309bfba22"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-155.6_el+0.0.wav",
+      "azimuth_deg": -155.593,
+      "elevation_deg": 0.0,
+      "sha256": "6bd925c58ba733b3a5b00eda695f72e54caf67e87f9046fc42d784e2103ff93b"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-149.5_el+0.0.wav",
+      "azimuth_deg": -149.492,
+      "elevation_deg": 0.0,
+      "sha256": "3fafa184970440c2ec4ee0f24456899fdd9e5ff8efcdd9a7407fa1c291b186c7"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-143.4_el+0.0.wav",
+      "azimuth_deg": -143.39,
+      "elevation_deg": 0.0,
+      "sha256": "965779353c1d1d993cb01ed1b6fee21d20dbdb491887f467bf394908cf22d323"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-137.3_el+0.0.wav",
+      "azimuth_deg": -137.288,
+      "elevation_deg": 0.0,
+      "sha256": "c7afcb7dc20d1d607dd40814f9aff56f1d6c17ef7d6e966379c4d60f347f0fc0"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-131.2_el+0.0.wav",
+      "azimuth_deg": -131.186,
+      "elevation_deg": 0.0,
+      "sha256": "02116ffe7b582ddee95d7618f6264112433a1bd170c73f23e24b359a2fc40f33"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-125.1_el+0.0.wav",
+      "azimuth_deg": -125.085,
+      "elevation_deg": 0.0,
+      "sha256": "2c79e1dc44c322d12536d23c1d11e2ab8b9aa555962b8498b02c7fce88d93215"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-119.0_el+0.0.wav",
+      "azimuth_deg": -118.983,
+      "elevation_deg": 0.0,
+      "sha256": "39095f6da301288ff937c6cc3e878f37e382cf2c83484e808b1018a042be4361"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-112.9_el+0.0.wav",
+      "azimuth_deg": -112.881,
+      "elevation_deg": 0.0,
+      "sha256": "f848378320a6094ac8a78fb3a2e6a6a7662e9c4bb717eaa9a95a54bb3360c749"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-106.8_el+0.0.wav",
+      "azimuth_deg": -106.78,
+      "elevation_deg": 0.0,
+      "sha256": "17d2c07b835d1ddf006b572f9fc4c67acbfa9b51dac33d3006e7595d7111dfb5"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-100.7_el+0.0.wav",
+      "azimuth_deg": -100.678,
+      "elevation_deg": 0.0,
+      "sha256": "bba3a658ce88dad487e7410e32b6851bdfd3dce2a1aa7a391c128bec9bc7a363"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-94.6_el+0.0.wav",
+      "azimuth_deg": -94.576,
+      "elevation_deg": 0.0,
+      "sha256": "b8c8f7471c28f145fe4ef48b604dd0968a48c02a96c278347ffd468ac7b16903"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-88.5_el+0.0.wav",
+      "azimuth_deg": -88.475,
+      "elevation_deg": 0.0,
+      "sha256": "52f33f911df1945c2daba8c51dfc0d9cd7cb24938e74ddd859f38b79d50d1df1"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-82.4_el+0.0.wav",
+      "azimuth_deg": -82.373,
+      "elevation_deg": 0.0,
+      "sha256": "2391632085379f21d19d18b8ab5ed9c1eb2afe27fc4e0338bc18757d112823a6"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-76.3_el+0.0.wav",
+      "azimuth_deg": -76.271,
+      "elevation_deg": 0.0,
+      "sha256": "ef013b8d32ec9c656362d8d6fb0ad831c299a402268b92d7358e7752874424e2"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-70.2_el+0.0.wav",
+      "azimuth_deg": -70.169,
+      "elevation_deg": 0.0,
+      "sha256": "dde318c2a78965b57ca08dbe68d17ce9c10082cf353a6c6ddd18cb210a69a355"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-64.1_el+0.0.wav",
+      "azimuth_deg": -64.068,
+      "elevation_deg": 0.0,
+      "sha256": "7443a87d7daa335d31e61275fa6a4ac9b96af0ea77dedc34097c20f8800823b3"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-58.0_el+0.0.wav",
+      "azimuth_deg": -57.966,
+      "elevation_deg": 0.0,
+      "sha256": "3fdb17bb89e71806e7c14d12107e237274bcd4b4e6b72dc3407ece1304c47f91"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-51.9_el+0.0.wav",
+      "azimuth_deg": -51.864,
+      "elevation_deg": 0.0,
+      "sha256": "5725abb4317d60388bf65923bce91852550c80ebd141c855780cda18257a691e"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-45.8_el+0.0.wav",
+      "azimuth_deg": -45.763,
+      "elevation_deg": 0.0,
+      "sha256": "02cb81356dba781ad0057317ca423c27f26d044ad27b234a79f5396d5dd5acfe"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-39.7_el+0.0.wav",
+      "azimuth_deg": -39.661,
+      "elevation_deg": 0.0,
+      "sha256": "78ef0280caef6582bc7aff795bce59ffabdbc275e197926be71511e91f2cb056"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-33.6_el+0.0.wav",
+      "azimuth_deg": -33.559,
+      "elevation_deg": 0.0,
+      "sha256": "4dc6ccc2846497a7abe5f5ea5217c0cff3401e57e8d117c5a53f21a014f0c314"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-27.5_el+0.0.wav",
+      "azimuth_deg": -27.458,
+      "elevation_deg": 0.0,
+      "sha256": "0f588b9f2421b21b2d296edb8e0fe4bfb5e4f2803541ae93ac801ec2ee814b39"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-21.4_el+0.0.wav",
+      "azimuth_deg": -21.356,
+      "elevation_deg": 0.0,
+      "sha256": "ac9e8e6142033a82e97052ed0cc881adb0510680ee9a073f5149a0f451382483"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-15.3_el+0.0.wav",
+      "azimuth_deg": -15.254,
+      "elevation_deg": 0.0,
+      "sha256": "560c4a44f4fa3163eb4ab48f9e544d595a21477a1bd3a094eb9aa96f3889491d"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-9.2_el+0.0.wav",
+      "azimuth_deg": -9.153,
+      "elevation_deg": 0.0,
+      "sha256": "7cefb2cb04ccc952be9f9c6b82dc91d4da7d4e9ae63553e5e2c5bbc6fba299bf"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az-3.1_el+0.0.wav",
+      "azimuth_deg": -3.051,
+      "elevation_deg": 0.0,
+      "sha256": "635ce3cc7d0a8911053f2f9554fb48130e8d4880c466f9fe6d32a51fd5188881"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+3.1_el+0.0.wav",
+      "azimuth_deg": 3.051,
+      "elevation_deg": 0.0,
+      "sha256": "7902269188e6a9a32c7cd30fa60ee1ffcbd135773a2fc26d3022cb53cf6085f3"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+9.2_el+0.0.wav",
+      "azimuth_deg": 9.153,
+      "elevation_deg": 0.0,
+      "sha256": "85f3c7ee0104a68aaa14724888c1b037c1632a7b2f48e124c049bad686f817ae"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+15.3_el+0.0.wav",
+      "azimuth_deg": 15.254,
+      "elevation_deg": 0.0,
+      "sha256": "b4da70eb6247ab9db8d0b04b6f1f0ce64685776086fe71d3faa1276d0657a13b"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+21.4_el+0.0.wav",
+      "azimuth_deg": 21.356,
+      "elevation_deg": 0.0,
+      "sha256": "ce826b1b5e564bfeea7f98d009ec1958b5a528b8de1654ff71c16c9959a68dfe"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+27.5_el+0.0.wav",
+      "azimuth_deg": 27.458,
+      "elevation_deg": 0.0,
+      "sha256": "8de79c7e62b97381f4851802fae6c9d93aff7fbf5159a62cd96d58fd5ff6aa70"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+33.6_el+0.0.wav",
+      "azimuth_deg": 33.559,
+      "elevation_deg": 0.0,
+      "sha256": "970ad0c108131325bc7c11754826c411823665eaaa0b98137872a73a3bb2fe74"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+39.7_el+0.0.wav",
+      "azimuth_deg": 39.661,
+      "elevation_deg": 0.0,
+      "sha256": "f6b492c340504dbb8163046d239ee7070c0369abd25f354500c0de8e16471562"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+45.8_el+0.0.wav",
+      "azimuth_deg": 45.763,
+      "elevation_deg": 0.0,
+      "sha256": "59ebefd7bbf94cab7f391d810658a49e92383d397ce70fd604707abfb7978df9"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+51.9_el+0.0.wav",
+      "azimuth_deg": 51.864,
+      "elevation_deg": 0.0,
+      "sha256": "d65c739551bb2702c406b47b03795798711304682adc9b8ce318aceb30021e95"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+58.0_el+0.0.wav",
+      "azimuth_deg": 57.966,
+      "elevation_deg": 0.0,
+      "sha256": "eaeabe20848c8e2fa77343ae2b15c732bb2d9409d5db90185e82fef2b7c8857a"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+64.1_el+0.0.wav",
+      "azimuth_deg": 64.068,
+      "elevation_deg": 0.0,
+      "sha256": "deb79e041c798602aa92aa30f9685b75cdbc0a1f5815004a636a5f61d312c3a7"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+70.2_el+0.0.wav",
+      "azimuth_deg": 70.169,
+      "elevation_deg": 0.0,
+      "sha256": "ec71ae52e831a91b52462c0b13cfd1e0282d0af56749bb9dc54a66dfa6db3dfc"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+76.3_el+0.0.wav",
+      "azimuth_deg": 76.271,
+      "elevation_deg": 0.0,
+      "sha256": "76ced63680d2a32701b7cc9c06b9607984807d7685dedf82997f2e9811aa6f34"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+82.4_el+0.0.wav",
+      "azimuth_deg": 82.373,
+      "elevation_deg": 0.0,
+      "sha256": "9b7513daf0e469e6b04affffc1e8c5e8eb34cc5b6657538cc7eeb97c1fa20764"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+88.5_el+0.0.wav",
+      "azimuth_deg": 88.475,
+      "elevation_deg": 0.0,
+      "sha256": "b095d7f4569eeaabb77d7d4af32741ca593051b049a77fe88eeb684452257e1f"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+94.6_el+0.0.wav",
+      "azimuth_deg": 94.576,
+      "elevation_deg": 0.0,
+      "sha256": "8efbafb5500a30f9a4d6a60a9e3cbedb61629f9e323bcc00c941b20ef57822da"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+100.7_el+0.0.wav",
+      "azimuth_deg": 100.678,
+      "elevation_deg": 0.0,
+      "sha256": "7ee1835b86ff17f49bcaf79caab1eaec7913be58ba8c298e3f487a4bc4bbee9c"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+106.8_el+0.0.wav",
+      "azimuth_deg": 106.78,
+      "elevation_deg": 0.0,
+      "sha256": "6eb77927a989a6196de6f4b65c5d6f0f4dbc77388442cee04528d480bceee000"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+112.9_el+0.0.wav",
+      "azimuth_deg": 112.881,
+      "elevation_deg": 0.0,
+      "sha256": "0c00eb9abf342658da7e6a001020535bff3157e01f107f84af162b855ce2a598"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+119.0_el+0.0.wav",
+      "azimuth_deg": 118.983,
+      "elevation_deg": 0.0,
+      "sha256": "0abcd80d82a4a9b5563cce65914f7de3884f69a8ccdb40fe2160022b29c8b2ec"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+125.1_el+0.0.wav",
+      "azimuth_deg": 125.085,
+      "elevation_deg": 0.0,
+      "sha256": "e54c2fa6010cff78f877c47470ed8f60c86c793c9acba47c83c79d18c23f14ff"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+131.2_el+0.0.wav",
+      "azimuth_deg": 131.186,
+      "elevation_deg": 0.0,
+      "sha256": "af92bca9bb9e7886842c63e985ca739a1e24ecb1d1305ab54e588341d6647559"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+137.3_el+0.0.wav",
+      "azimuth_deg": 137.288,
+      "elevation_deg": 0.0,
+      "sha256": "304cf56a1edec41e9b1b56a567a69f6f3a46b5d89f91ea60afbfed4ce4e80feb"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+143.4_el+0.0.wav",
+      "azimuth_deg": 143.39,
+      "elevation_deg": 0.0,
+      "sha256": "5808ddaa0c7ca11c5272f72c83535ddbb508ce8dd6d0e281ea4064b63c125c99"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+149.5_el+0.0.wav",
+      "azimuth_deg": 149.492,
+      "elevation_deg": 0.0,
+      "sha256": "0fa63fb55d7522828c553b93677db3b705f64aa20bb3964d5314e20d311e781e"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+155.6_el+0.0.wav",
+      "azimuth_deg": 155.593,
+      "elevation_deg": 0.0,
+      "sha256": "b9262a317309a199d92290e34ac63cdf77f623f1d34ee9792fd78d574f735859"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+161.7_el+0.0.wav",
+      "azimuth_deg": 161.695,
+      "elevation_deg": 0.0,
+      "sha256": "e7be4b18268768008994176bd0f71c193ed7851e720cfbba82ba6a942d4f7735"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+167.8_el+0.0.wav",
+      "azimuth_deg": 167.797,
+      "elevation_deg": 0.0,
+      "sha256": "5ca071930c487fc38930041ea5064012f2e3f72321d8548b0f492409e4d997db"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+173.9_el+0.0.wav",
+      "azimuth_deg": 173.898,
+      "elevation_deg": 0.0,
+      "sha256": "95f97a27a0675d2306d5a479799c9e2e09207f83b0f9e842d5d450ec5e53391b"
+    },
+    {
+      "file": "hrirs/impulse_azimuth_sweep_az+180.0_el+0.0.wav",
+      "azimuth_deg": 180.0,
+      "elevation_deg": 0.0,
+      "sha256": "53553e54f3d1504d6c657b58d03f6ae628ed659cef8378ff94dac59f83ca80f0"
+    }
+  ],
+  "output_file": "binaural_impulse_azimuth_sweep.wav",
+  "output_sha256": "71ac580cfad59d008486038f58f2eecfbe2b441c6438361320da47897bdedb1a",
+  "output_peak_linear": 0.3674027703274992
+}

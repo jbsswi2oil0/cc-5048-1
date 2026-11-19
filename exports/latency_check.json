@@ -1,0 +1,11 @@
+{
+  "block_size_samples": 512,
+  "block_latency_samples_left": 512,
+  "block_latency_samples_right": 512,
+  "block_latency_seconds": 0.010666666666666666,
+  "documented_algorithm_latency_samples": 512,
+  "matches_documentation": true,
+  "total_arrival_samples_left": 512,
+  "total_arrival_samples_right": 512,
+  "total_arrival_seconds": 0.010666666666666666
+}
