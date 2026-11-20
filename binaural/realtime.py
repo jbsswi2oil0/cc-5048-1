@@ -47,7 +47,23 @@ class RealtimeBinauralPlayer:
         self._lock = threading.Lock()
         self._stream = None
         self.status = StreamStatus()
+        self.channel_mode = "stereo"
         self.backend = "sounddevice" if sd is not None else "simulated"
+
+    # ------------------------------------------------------------------
+    def set_difference_only(self, enabled: bool) -> None:
+        """Play ``L - R`` on both channels: only the interaural difference."""
+        self.channel_mode = "difference" if enabled else "stereo"
+
+    @property
+    def difference_only(self) -> bool:
+        return self.channel_mode == "difference"
+
+    def _to_output(self, stereo: np.ndarray) -> np.ndarray:
+        if self.channel_mode == "difference":
+            d = (stereo[:, 0] - stereo[:, 1]) * 0.5
+            return np.column_stack([d, d])
+        return stereo
 
     # ------------------------------------------------------------------
     def _next_block(self) -> np.ndarray | None:
@@ -85,7 +101,7 @@ class RealtimeBinauralPlayer:
             outdata.fill(0.0)
             self.status.underruns += 1
             return
-        stereo = self.renderer.process_block(block)
+        stereo = self._to_output(self.renderer.process_block(block))
         outdata[:, 0] = stereo[:, 0]
         outdata[:, 1] = stereo[:, 1]
         self.status.callback_blocks += 1
@@ -135,7 +151,8 @@ class RealtimeBinauralPlayer:
             block = self._next_block()
             if block is None:
                 break
-            stereo = self.renderer.process_block(block).astype(np.float32)
+            stereo = self._to_output(
+                self.renderer.process_block(block)).astype(np.float32)
             out[k * self.block_size:(k + 1) * self.block_size] = stereo
             self.status.callback_blocks += 1
         return out[: self.status.callback_blocks * self.block_size]

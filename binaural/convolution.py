@@ -141,9 +141,7 @@ def measure_pipeline_latency(renderer, sample_rate: int) -> dict:
 
     def impulse_run(hrir: np.ndarray):
         renderer.reset()
-        renderer._banks[renderer._active] = renderer._build_bank(hrir)
-        renderer._banks[1 - renderer._active] = renderer._build_bank(hrir)
-        renderer._fade_pos = 0
+        renderer.force_hrir(hrir)
         left_peak = right_peak = -1
         for k in range(n_blocks):
             block = np.zeros(b)

@@ -39,6 +39,53 @@
 * **实时回调安全**：回调只索引预载入内存的 numpy 缓冲，无文件/网络 I/O；
   `audio_thread_io_audit()` 静态审计回调源码中的禁用调用。
 
+## 滤波器交接：两种实现与切换条件
+
+连续向左、随即向右转头时，**第二个姿态可能在上一次滤波器的尾音释放
+之前到达**。引擎为此提供两套可切换的交接实现（`handover.py` +
+`renderer.py`），可按事件或全局选择：
+
+| 模式 | 做法 | 听感结果 |
+| --- | --- | --- |
+| `parallel_tail` | 旧卷积继续运行，其尾部与新滤波器在整段等功率斜坡上**混合输出** | 旧 ITD / 尾音在整段重叠中仍可闻；斜坡内再来一次转头会同时存活**三个**滤波器 |
+| `state_rebuild` | 用**同一段输入历史**重建新滤波器状态，再用极短（32 样本）去咔哒斜坡**干净切换** | 切换后只剩新滤波器，ITD 立即精确 |
+
+两种模式都从同一份输入历史重建新滤波器，区别只在于**是否保留旧尾音**。
+斜坡上的增益按每样本等功率归一化（`Σg²` 归一），因此两路、三路重叠都
+不会出现电平凹陷。
+
+### 切换条件由「哪条约束先失效」决定
+
+约束项（`HandoverBudgets`）：`alive_filter_cap`（同一采样最多 2 个滤波器
+存活）、`itd_drift`（重叠期 ITD 漂移上限）、`transient_step`（切换突变上限）。
+`calibrate_switch_condition()` 在**脉冲列**与**持续低音**上实测 `parallel_tail`，
+对每个约束记录「从哪个第二次转头延迟开始就始终满足」，取其中**最大**的
+延迟作为阈值，其归属即为最先失效的约束。默认配置（B=512、5 ms 斜坡 →
+斜坡 1024 样本）下 `alive_filter_cap` 先失效，阈值 **1024 样本**。
+
+`decide_mode()` 用这个数字**实际控制播放路径**：第二次转头延迟
+`< 阈值 → state_rebuild`，`≥ 阈值 → parallel_tail`；事件可用 `mode=`
+强制覆盖。`handover_log` 逐条记录请求样本、实际样本、所选模式、阈值与
+绑定约束，可复核条件确实在驱动路由。`auto` 为默认路由模式。
+
+### 停止并行计算后仍须保留的输入历史
+
+overlap-save 中输出块 `t` 为 `core(x_{t-1})`，汇总帧 `t-1` 至 `t-P`
+（`P = ceil(hrir_length / B)`）；最旧的帧需要输入块 `x_{t-P-1}` 到
+`x_{t-1}`。因此停止并行后仍须保留 **`P + 1` 个整块、即
+`required_history_samples = (P+1)·B` 个样本**的原始输入，既必要也充分：
+把它重新灌入一个新卷积器即可逐位复现运行中声部的下一块输出。默认
+B=512、HRIR 128 样本 → `P=1` → **1024 样本（2 块）**。`state_report()`
+中的 `required_history_samples` 与 `history_blocks_retained` 给出该值。
+
+### 半块平移与按样本重对齐
+
+`render_turn_scenario(..., shift_samples=half_block)` 把**音频与头动记录
+一起**平移，保持声源—头部相对运动不变。因为引擎以绝对采样位置调度事件、
+增益在块内逐样本求值，按同样偏移重新对齐后两份输出**逐样本一致**
+（实测 `max_abs_diff ≈ 2e-17`），可见差异只可能来自滤波切点本身，而非
+块网格量化。
+
 ## 用法
 
 ```bash
@@ -50,8 +97,15 @@ pip install numpy scipy soundfile sounddevice matplotlib pytest
 python -m binaural.app selftest
 
 # 交互界面：拖动声源 / yaw 滑块 / front-left-right-back 预设
+# 「two turns」按钮启动两连转头；拖动 "2nd turn (ms)" 滑块实时移动第二次
+# 转头时刻（交接在已进行的第一转之后重新排程）；"L-R only" 单独播放两耳
+# 差分 (L−R)，用于只听到双耳差异、屏蔽共模成分。
 python -m binaural.app gui --signal speech
 # 无显示或无 PortAudio 时自动降级为无头模拟场景并打印状态报告
+
+# 实测切换条件并验证它确实驱动播放路径；同时给出半块平移对齐结果与
+# 须保留的历史样本数（可 --out 落盘 JSON）
+python -m binaural.app measure --out exports/handover_measure.json
 
 # 离线导出三个信号 × 五个场景（前/左/右/后静态 + 全周扫描）
 python -m binaural.app --block-size 512 export --signal broadband --out exports
@@ -79,6 +133,11 @@ pytest tests/ -q
 * `manifest_*.json`：块长、算法延迟、交叉淡化时长、HRTF 网格出处、
   每个文件的 **SHA256（对落盘 WAV 字节计算，可直接复核）**；
 * `latency_check.json`：冲激法延迟测量结果。
+* 交接相关的复核对：`python -m binaural.app measure` 打印（或 `--out`
+  落盘）`switch_condition`、逐延迟 `measurements`（ITD 漂移、突变峰值、
+  存活滤波器数）、`routing_probes`（阈值前后 auto 实际选择的模式，及两种
+  模式并排的漂移/突变/超限采样数）、`half_block_shift`（重对齐后残差）与
+  `history`（须保留的历史样本数）。
 
 ## HRTF 个体差异（重要声明）
 
